@@ -17,7 +17,7 @@ The output is a CSV and a PowerShell script where both can be copied to the targ
 
 * Generate multiple departments (OU's)
 * Generate grouping structure and randomly assign
-* Implement additional Faker object options so populate other LDAP fields such as Address, Region
+* Implement additional Faker object options to populate other LDAP fields such as Address, Region
 * Create an organisational chart of the nested grouping structure
 
 
