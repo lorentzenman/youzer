@@ -4,7 +4,7 @@ Fake User Generator for Active Directory Environments
 ## Introduction
 
 The goal of Youzer is to create information rich Active Directory environments.
-This uses the python3 library 'faker' to generate random accounts. 
+This uses the python3 library 'faker' to generate random accounts.
 ```
 pip3 install faker
 ```
@@ -32,6 +32,12 @@ Youzer can create 100,000 users in under 30 seconds and 1,000,000 users in aroun
 [!] Creating Powershell script for import : sales_example.ps1
 python3 youzer.py --generate --generate_length 20 --ou  --domain example      20.35s user 0.11s system 95% cpu 21.354 total
 ```
+
+## YouTube Video
+
+[![Alt text](https://img.youtube.com/vi/DIdFxF814AA/0.jpg)](https://www.youtube.com/watch?v=DIdFxF814AA)
+
+
 
 ### Creating 1000 user accounts with a randomly generated alphanumeric password choice of 20 characters
 
@@ -87,7 +93,7 @@ Denise Fisher,Denise,Fisher,"ou=sales,dc=example,dc=domain",CT1pbfAnCoezuyrJbQX9
 ### Creating 1000 user accounts from a source word list
 
 ```
-python3 youzer.py --wordlist ~/tools/pw/Probable-Wordlists/Real-Passwords/Top12Thousand-probable-v2.txt --ou "ou=IT,dc=example,dc=domain" --domain example --users 1000 --output IT_example.csv 
+python3 youzer.py --wordlist ~/tools/pw/Probable-Wordlists/Real-Passwords/Top12Thousand-probable-v2.txt --ou "ou=IT,dc=example,dc=domain" --domain example --users 1000 --output IT_example.csv
 
 
 
