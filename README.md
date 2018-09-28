@@ -4,7 +4,10 @@ Fake User Generator for Active Directory Environments
 ## Introduction
 
 The goal of Youzer is to create information rich Active Directory environments.
-This uses the python3 library 'faker' to generate random accounts. <pip3 install faker>
+This uses the python3 library 'faker' to generate random accounts. 
+```
+pip3 install faker
+```
 
 You can either supply a wordlist or have the passwords generated. The generated option is great for testing things like hashcat rule masks. Wordlist option is useful when wanting to supply a specific password list, or to practice dictionary attacks.
 
@@ -12,10 +15,10 @@ The output is a CSV and a PowerShell script where both can be copied to the targ
 
 ### RoadMap
 
-> Generate multiple departments (OU's)
-> Generate grouping structure and randomly assign
-> Implement additional Faker object options so populate other LDAP fields such as Address, Region
-> Create an organisational chart of the nested grouping structure
+* Generate multiple departments (OU's)
+* Generate grouping structure and randomly assign
+* Implement additional Faker object options so populate other LDAP fields such as Address, Region
+* Create an organisational chart of the nested grouping structure
 
 
 # Examples
