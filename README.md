@@ -9,7 +9,7 @@ This uses the python3 library 'faker' to generate random accounts.
 pip3 install faker
 ```
 
-You can either supply a wordlist or have the passwords generated. The generated option is great for testing things like hashcat rule masks. Wordlist option is useful when wanting to supply a specific password list, or to practice dictionary attacks.
+You can either supply a wordlist or have the passwords generated. The generated option is great for testing things like hashcat rule masks. Wordlist option is useful when wanting to supply a specific password list seeded into an environment, or to practice dictionary attacks.
 
 The output is a CSV and a PowerShell script where both can be copied to the target. When executed, the PowerShell script binds over LDAP so doesn't rely on the newer Active Directory modules and creates each user object. Currently the OU's need to exist, but this tool is a sub-project of 'Labseed' where the Active Directory structure will be created.
 
@@ -22,6 +22,16 @@ The output is a CSV and a PowerShell script where both can be copied to the targ
 
 
 # Examples
+
+Youzer can create 100,000 users in under 30 seconds and 1,000,000 users in around 3 minutes.
+
+```
+[-] Domain Name set to : example
+[*] Writing to output file : sales_example.csv
+[!] Generating 100000 users in password generate mode
+[!] Creating Powershell script for import : sales_example.ps1
+python3 youzer.py --generate --generate_length 20 --ou  --domain example      20.35s user 0.11s system 95% cpu 21.354 total
+```
 
 ## Creating 1000 user accounts with a randomly generated alphanumeric password choice of 20 characters
 
